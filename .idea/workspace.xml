@@ -1,0 +1,339 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="7b16ee6d-1553-4b6e-aa87-3ae6622f1ce8" name="默认更改列表" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="customer" type="feb32156:DbDataSourceImpl" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="customer" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="customer" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="customersys: schema" type="76f4a085:MysqlImplModel$Schema" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="customer" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="customersys: schema" type="76f4a085:MysqlImplModel$Schema" />
+        <item name="tab_good: table" type="285a2a93:MysqlImplModel$Table" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="customer" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="customersys: schema" type="76f4a085:MysqlImplModel$Schema" />
+        <item name="tab_manager: table" type="285a2a93:MysqlImplModel$Table" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="customer" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="customersys: schema" type="76f4a085:MysqlImplModel$Schema" />
+        <item name="tab_order: table" type="285a2a93:MysqlImplModel$Table" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="customer" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="customersys: schema" type="76f4a085:MysqlImplModel$Schema" />
+        <item name="tab_user: table" type="285a2a93:MysqlImplModel$Table" />
+      </path>
+    </expand>
+    <select />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="FxmlFile" />
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectId" id="1md7WypLNTVK3Wcj20m0JDO0oxJ" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="DatabaseDriversLRU" value="mysql" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/java/cn/dsq/customer/jd" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="project.structure.last.edited" value="Libraries" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.45172414" />
+    <property name="restartRequiresConfirmation" value="false" />
+    <property name="settings.editor.selected.configurable" value="preferences.editor" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="java" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\课设\Customer1.0\src\main\java\cn\dsq\customer\jd" />
+      <recent name="D:\课设\Customer1.0\src\main\java\cn\dsq\customer" />
+      <recent name="D:\课设\Customer1.0\src\main" />
+      <recent name="D:\课设\Customer1.0\src\main\resources" />
+      <recent name="D:\课设\Customer1.0\src\main\java" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="cn.dsq.customer.jd" />
+      <recent name="cn.dsq.customer.util" />
+      <recent name="cn.dsq.util" />
+      <recent name="cn.dsq.domain" />
+      <recent name="cn.dsq.dao.impl" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\课设\Customer1.0\src\main\resources" />
+      <recent name="D:\课设\Customer1.0\src\main\java\cn\dsq\customer\jfd" />
+      <recent name="D:\课设\Customer1.0\src\main\java\cn\dsq\customer\proper" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Application.TestFram">
+    <configuration name="GoodRadom" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="cn.dsq.customer.util.GoodRadom" />
+      <module name="Customer1.0" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="cn.dsq.customer.util.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="OrderRadom" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="cn.dsq.customer.util.OrderRadom" />
+      <module name="Customer1.0" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="cn.dsq.customer.util.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SetManager" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="cn.dsq.customer.util.SetManager" />
+      <module name="Customer1.0" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="cn.dsq.customer.util.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TestFram" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="cn.dsq.customer.domain.TestFram" />
+      <module name="Customer1.0" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="cn.dsq.customer.domain.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="UuidUtil" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="cn.dsq.customer.util.UuidUtil" />
+      <module name="Customer1.0" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="cn.dsq.customer.util.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="Application.TestFram" />
+      <item itemvalue="Application.UuidUtil" />
+      <item itemvalue="Application.GoodRadom" />
+      <item itemvalue="Application.OrderRadom" />
+      <item itemvalue="Application.SetManager" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.TestFram" />
+        <item itemvalue="Application.OrderRadom" />
+        <item itemvalue="Application.SetManager" />
+        <item itemvalue="Application.GoodRadom" />
+        <item itemvalue="Application.UuidUtil" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="7b16ee6d-1553-4b6e-aa87-3ae6622f1ce8" name="默认更改列表" comment="" />
+      <created>1609811649041</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1609811649041</updated>
+      <workItem from="1609811651882" duration="8890000" />
+      <workItem from="1609821625777" duration="30147000" />
+      <workItem from="1609863971274" duration="593000" />
+      <workItem from="1609891612153" duration="32625000" />
+      <workItem from="1609977995938" duration="54734000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="251" y="82" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1609827813614">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="251" y="82" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1536.824@0.0.1536.824" timestamp="1609827813614" />
+    <state x="574" y="131" key="#com.intellij.ide.util.MemberChooser" timestamp="1610073530765">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="574" y="131" key="#com.intellij.ide.util.MemberChooser/0.0.1536.824@0.0.1536.824" timestamp="1610073530765" />
+    <state x="391" y="93" key="#com.intellij.ide.util.frameworkSupport.AddFrameworkSupportDialog" timestamp="1609822446186">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="391" y="93" key="#com.intellij.ide.util.frameworkSupport.AddFrameworkSupportDialog/0.0.1536.824@0.0.1536.824" timestamp="1609822446186" />
+    <state x="471" y="340" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog" timestamp="1609989693303">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="471" y="340" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog/0.0.1536.824@0.0.1536.824" timestamp="1609989693303" />
+    <state x="600" y="279" width="336" height="271" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes" timestamp="1609987301408">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="600" y="279" width="336" height="271" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/0.0.1536.824@0.0.1536.824" timestamp="1609987301408" />
+    <state x="608" y="300" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.packages" timestamp="1609811928914">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="608" y="300" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.packages/0.0.1536.824@0.0.1536.824" timestamp="1609811928914" />
+    <state x="499" y="162" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1610074267279">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="499" y="162" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1536.824@0.0.1536.824" timestamp="1610074267279" />
+    <state x="549" y="170" key="FileChooserDialogImpl" timestamp="1609835283867">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="549" y="170" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1609835283867" />
+    <state width="1493" height="163" key="GridCell.Tab.0.bottom" timestamp="1610077269965">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="163" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1610077269965" />
+    <state width="1493" height="163" key="GridCell.Tab.0.center" timestamp="1610077269964">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="163" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1610077269964" />
+    <state width="1493" height="163" key="GridCell.Tab.0.left" timestamp="1610077269964">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="163" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1610077269964" />
+    <state width="1493" height="163" key="GridCell.Tab.0.right" timestamp="1610077269964">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="163" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1610077269964" />
+    <state width="1493" height="261" key="GridCell.Tab.1.bottom" timestamp="1610077171582">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="261" key="GridCell.Tab.1.bottom/0.0.1536.824@0.0.1536.824" timestamp="1610077171582" />
+    <state width="1493" height="261" key="GridCell.Tab.1.center" timestamp="1610077171582">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="261" key="GridCell.Tab.1.center/0.0.1536.824@0.0.1536.824" timestamp="1610077171582" />
+    <state width="1493" height="261" key="GridCell.Tab.1.left" timestamp="1610077171582">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="261" key="GridCell.Tab.1.left/0.0.1536.824@0.0.1536.824" timestamp="1610077171582" />
+    <state width="1493" height="261" key="GridCell.Tab.1.right" timestamp="1610077171582">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="261" key="GridCell.Tab.1.right/0.0.1536.824@0.0.1536.824" timestamp="1610077171582" />
+    <state x="299" y="70" key="Maven.ArtifactSearchDialog" timestamp="1609900177002">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="299" y="70" key="Maven.ArtifactSearchDialog/0.0.1536.824@0.0.1536.824" timestamp="1609900177002" />
+    <state x="249" y="0" key="SettingsEditor" timestamp="1609902904085">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="249" y="0" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1609902904085" />
+    <state x="586" y="238" width="364" height="342" key="com.intellij.database.psi.DbRenamePsiElementProcessor.DbRenameDialog" timestamp="1609835131873">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="586" y="238" width="364" height="342" key="com.intellij.database.psi.DbRenamePsiElementProcessor.DbRenameDialog/0.0.1536.824@0.0.1536.824" timestamp="1609835131873" />
+    <state x="635" y="106" key="com.intellij.database.view.ui.AbstractDbRefactoringDialog" timestamp="1610005662316">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="635" y="106" key="com.intellij.database.view.ui.AbstractDbRefactoringDialog/0.0.1536.824@0.0.1536.824" timestamp="1610005662316" />
+    <state x="620" y="140" key="com.intellij.database.view.ui.DbObjectDialog" timestamp="1609812730195">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="620" y="140" key="com.intellij.database.view.ui.DbObjectDialog/0.0.1536.824@0.0.1536.824" timestamp="1609812730195" />
+    <state x="140" y="99" width="1350" height="638" key="com.intellij.history.integration.ui.views.DirectoryHistoryDialog" timestamp="1609984579298">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="140" y="99" width="1350" height="638" key="com.intellij.history.integration.ui.views.DirectoryHistoryDialog/0.0.1536.824@0.0.1536.824" timestamp="1609984579298" />
+    <state x="93" y="93" width="1350" height="638" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1610077085183">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="93" y="93" width="1350" height="638" key="com.intellij.history.integration.ui.views.FileHistoryDialog/0.0.1536.824@0.0.1536.824" timestamp="1610077085183" />
+    <state x="479" y="240" key="com.intellij.ide.util.TipDialog" timestamp="1609977999998">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="479" y="240" key="com.intellij.ide.util.TipDialog/0.0.1536.824@0.0.1536.824" timestamp="1609977999998" />
+    <state x="178" y="116" key="new project wizard" timestamp="1609821836703">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="178" y="116" key="new project wizard/0.0.1536.824@0.0.1536.824" timestamp="1609821836703" />
+    <state x="425" y="187" key="run.anything.popup" timestamp="1609915595454">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="425" y="187" key="run.anything.popup/0.0.1536.824@0.0.1536.824" timestamp="1609915595454" />
+    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup" timestamp="1610003889374">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup/0.0.1536.824@0.0.1536.824" timestamp="1610003889374" />
+  </component>
+</project>
