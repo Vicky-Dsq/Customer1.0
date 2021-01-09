@@ -8,8 +8,6 @@ public interface GoodDao {
     public Good findByName(String name);
     public void save(Good good);
     public Good findByNameId(String name,int id);
-
-    void delete(Good good);
-
-    void update(Good good, String change, String replace);
+    public void delete(Good good);
+    public void update(Good good, String change, String replace);
 }

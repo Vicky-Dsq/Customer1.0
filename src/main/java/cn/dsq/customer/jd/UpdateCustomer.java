@@ -22,7 +22,7 @@ public class UpdateCustomer extends JFrame {
         initComponents();
     }
 
-    private void button1ActionPerformed(ActionEvent e) {
+    private void updatecusActionPerformed(ActionEvent e) {
         // TODO add your code here
         if(updateName.getText().equals("")){
             idea.setText("请输入要修改信息的客户的姓名！");
@@ -45,7 +45,6 @@ public class UpdateCustomer extends JFrame {
             change="grade";
         }
         String replace = replaceField.getText();
-
         if(user!=null){
             userDao.update(user,change,replace);
             JOptionPane.showMessageDialog(null,"修改成功！");
@@ -60,7 +59,6 @@ public class UpdateCustomer extends JFrame {
         label1 = new JLabel();
         label2 = new JLabel();
         updateName = new JTextField();
-        button1 = new JButton();
         rb1 = new JRadioButton();
         rb2 = new JRadioButton();
         rb3 = new JRadioButton();
@@ -70,6 +68,7 @@ public class UpdateCustomer extends JFrame {
         replaceField = new JTextField();
         label4 = new JLabel();
         idea = new JLabel();
+        updatecus = new JButton();
 
         //======== this ========
         setMinimumSize(new Dimension(600, 600));
@@ -89,16 +88,6 @@ public class UpdateCustomer extends JFrame {
         label2.setBounds(new Rectangle(new Point(105, 130), label2.getPreferredSize()));
         contentPane.add(updateName);
         updateName.setBounds(215, 160, 140, 30);
-
-        //---- button1 ----
-        button1.setText(bundle.getString("button1.text_4"));
-        button1.addActionListener(e -> {
-			button1ActionPerformed(e);
-			button1ActionPerformed(e);
-			button1ActionPerformed(e);
-		});
-        contentPane.add(button1);
-        button1.setBounds(245, 380, 84, 30);
 
         //---- rb1 ----
         rb1.setText(bundle.getString("rb1.text"));
@@ -140,6 +129,12 @@ public class UpdateCustomer extends JFrame {
         contentPane.add(idea);
         idea.setBounds(200, 345, 200, 30);
 
+        //---- updatecus ----
+        updatecus.setText(bundle.getString("updatecus.text_3"));
+        updatecus.addActionListener(e -> updatecusActionPerformed(e));
+        contentPane.add(updatecus);
+        updatecus.setBounds(235, 375, 100, 35);
+
         {
             // compute preferred size
             Dimension preferredSize = new Dimension();
@@ -163,7 +158,6 @@ public class UpdateCustomer extends JFrame {
     private JLabel label1;
     private JLabel label2;
     private JTextField updateName;
-    private JButton button1;
     private JRadioButton rb1;
     private JRadioButton rb2;
     private JRadioButton rb3;
@@ -173,5 +167,6 @@ public class UpdateCustomer extends JFrame {
     private JTextField replaceField;
     private JLabel label4;
     private JLabel idea;
+    private JButton updatecus;
     // JFormDesigner - End of variables declaration  //GEN-END:variables
 }

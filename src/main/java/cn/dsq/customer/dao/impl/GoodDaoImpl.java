@@ -32,7 +32,7 @@ public class GoodDaoImpl implements GoodDao {
         }
         return good;
     }
-
+    
     /**
      * 通过商品名称查找商品
      * @param name

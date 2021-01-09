@@ -134,7 +134,7 @@
       <recent name="D:\课设\Customer1.0\src\main\java\cn\dsq\customer\proper" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.ManagerDaoImplTest">
+  <component name="RunManager" selected="Application.TestFram">
     <configuration name="TestFram" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="cn.dsq.customer.domain.TestFram" />
       <module name="customer" />
@@ -228,11 +228,11 @@
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.TestFram" />
         <item itemvalue="JUnit.ManagerDaoImplTest" />
         <item itemvalue="JUnit.GoodDaoImplTest" />
         <item itemvalue="Arquillian JUnit.GoodDaoImplTest" />
         <item itemvalue="Arquillian JUnit.GoodDaoImplTest.findById" />
-        <item itemvalue="Application.TestFram" />
       </list>
     </recent_temporary>
   </component>
@@ -252,7 +252,8 @@
       <workItem from="1609891612153" duration="32625000" />
       <workItem from="1609977995938" duration="54734000" />
       <workItem from="1610078497611" duration="16354000" />
-      <workItem from="1610151328470" duration="11333000" />
+      <workItem from="1610151328470" duration="13168000" />
+      <workItem from="1610175776922" duration="3757000" />
     </task>
     <servers />
   </component>
@@ -288,10 +289,10 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="391" y="93" key="#com.intellij.ide.util.frameworkSupport.AddFrameworkSupportDialog/0.0.1536.824@0.0.1536.824" timestamp="1609822446186" />
-    <state x="471" y="340" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog" timestamp="1610161419420">
+    <state x="471" y="340" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog" timestamp="1610165210190">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="471" y="340" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog/0.0.1536.824@0.0.1536.824" timestamp="1610161419420" />
+    <state x="471" y="340" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog/0.0.1536.824@0.0.1536.824" timestamp="1610165210190" />
     <state x="600" y="279" width="336" height="271" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes" timestamp="1609987301408">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -312,22 +313,22 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="549" y="170" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1610158139158" />
-    <state width="1493" height="163" key="GridCell.Tab.0.bottom" timestamp="1610161356735">
+    <state width="1493" height="163" key="GridCell.Tab.0.bottom" timestamp="1610179151906">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="163" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1610161356735" />
-    <state width="1493" height="163" key="GridCell.Tab.0.center" timestamp="1610161356735">
+    <state width="1493" height="163" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1610179151906" />
+    <state width="1493" height="163" key="GridCell.Tab.0.center" timestamp="1610179151906">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="163" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1610161356735" />
-    <state width="1493" height="163" key="GridCell.Tab.0.left" timestamp="1610161356735">
+    <state width="1493" height="163" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1610179151906" />
+    <state width="1493" height="163" key="GridCell.Tab.0.left" timestamp="1610179151906">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="163" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1610161356735" />
-    <state width="1493" height="163" key="GridCell.Tab.0.right" timestamp="1610161356735">
+    <state width="1493" height="163" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1610179151906" />
+    <state width="1493" height="163" key="GridCell.Tab.0.right" timestamp="1610179151906">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="163" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1610161356735" />
+    <state width="1493" height="163" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1610179151906" />
     <state width="1493" height="261" key="GridCell.Tab.1.bottom" timestamp="1610077171582">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -376,10 +377,10 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="93" y="93" width="1350" height="638" key="com.intellij.history.integration.ui.views.FileHistoryDialog/0.0.1536.824@0.0.1536.824" timestamp="1610077085183" />
-    <state x="479" y="240" key="com.intellij.ide.util.TipDialog" timestamp="1610151358301">
+    <state x="479" y="240" key="com.intellij.ide.util.TipDialog" timestamp="1610175787440">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="479" y="240" key="com.intellij.ide.util.TipDialog/0.0.1536.824@0.0.1536.824" timestamp="1610151358301" />
+    <state x="479" y="240" key="com.intellij.ide.util.TipDialog/0.0.1536.824@0.0.1536.824" timestamp="1610175787440" />
     <state x="289" y="18" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1610158446565">
       <screen x="0" y="0" width="1536" height="824" />
     </state>

@@ -24,7 +24,7 @@ public class UpdateGoods extends JFrame {
         initComponents();
     }
 
-    private void button1ActionPerformed(ActionEvent e) {
+    private void updategoodActionPerformed(ActionEvent e) {
         // TODO add your code here
         if(updateId.getText().equals("")){
             idea.setText("请输入要修改的商品的编号！");
@@ -35,9 +35,9 @@ public class UpdateGoods extends JFrame {
         Good good = new Good();
         good = goodDao.findById(id);
         String change = null;
-        if(rb1.isSelected()){
+        if(g1.isSelected()){
             change = "name";
-        }else if(rb2.isSelected()){
+        }else if(g2.isSelected()){
             change = "price";
         }
         String replace = updateField.getText();
@@ -56,12 +56,12 @@ public class UpdateGoods extends JFrame {
         label3 = new JLabel();
         updateId = new JTextField();
         label4 = new JLabel();
-        rb1 = new JRadioButton();
-        rb2 = new JRadioButton();
+        g1 = new JRadioButton();
+        g2 = new JRadioButton();
         updateField = new JTextField();
         label5 = new JLabel();
-        button1 = new JButton();
         idea = new JLabel();
+        updategood = new JButton();
 
         //======== this ========
         setMinimumSize(new Dimension(600, 600));
@@ -88,15 +88,15 @@ public class UpdateGoods extends JFrame {
         contentPane.add(label4);
         label4.setBounds(110, 220, 210, 24);
 
-        //---- rb1 ----
-        rb1.setText(bundle.getString("rb1.text_2"));
-        contentPane.add(rb1);
-        rb1.setBounds(170, 265, 95, 19);
+        //---- g1 ----
+        g1.setText(bundle.getString("g1.text_2"));
+        contentPane.add(g1);
+        g1.setBounds(170, 265, 95, 19);
 
-        //---- rb2 ----
-        rb2.setText(bundle.getString("rb2.text_2"));
-        contentPane.add(rb2);
-        rb2.setBounds(300, 265, 70, 19);
+        //---- g2 ----
+        g2.setText(bundle.getString("g2.text_2"));
+        contentPane.add(g2);
+        g2.setBounds(300, 265, 70, 19);
         contentPane.add(updateField);
         updateField.setBounds(225, 295, 130, 30);
 
@@ -104,19 +104,14 @@ public class UpdateGoods extends JFrame {
         label5.setText(bundle.getString("label5.text_3"));
         contentPane.add(label5);
         label5.setBounds(120, 300, 105, 25);
-
-        //---- button1 ----
-        button1.setText(bundle.getString("button1.text_3"));
-        button1.addActionListener(e -> {
-			button1ActionPerformed(e);
-			button1ActionPerformed(e);
-			button1ActionPerformed(e);
-			button1ActionPerformed(e);
-		});
-        contentPane.add(button1);
-        button1.setBounds(245, 380, 84, 30);
         contentPane.add(idea);
         idea.setBounds(190, 345, 200, 30);
+
+        //---- updategood ----
+        updategood.setText(bundle.getString("updategood.text_3"));
+        updategood.addActionListener(e -> updategoodActionPerformed(e));
+        contentPane.add(updategood);
+        updategood.setBounds(230, 375, 100, 35);
 
         {
             // compute preferred size
@@ -136,8 +131,8 @@ public class UpdateGoods extends JFrame {
         setLocationRelativeTo(getOwner());
         // JFormDesigner - End of component initialization  //GEN-END:initComponents
         ButtonGroup group = new ButtonGroup();
-        group.add(rb1);
-        group.add(rb2);
+        group.add(g1);
+        group.add(g2);
     }
 
     // JFormDesigner - Variables declaration - DO NOT MODIFY  //GEN-BEGIN:variables
@@ -145,11 +140,11 @@ public class UpdateGoods extends JFrame {
     private JLabel label3;
     private JTextField updateId;
     private JLabel label4;
-    private JRadioButton rb1;
-    private JRadioButton rb2;
+    private JRadioButton g1;
+    private JRadioButton g2;
     private JTextField updateField;
     private JLabel label5;
-    private JButton button1;
     private JLabel idea;
+    private JButton updategood;
     // JFormDesigner - End of variables declaration  //GEN-END:variables
 }
