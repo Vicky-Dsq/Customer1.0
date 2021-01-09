@@ -47,7 +47,6 @@ public class OrderDaoImpl implements OrderDao {
         //1.定义sql
         String sql = "insert into tab_order values(?,?,?)";
         //2.执行sql
-
         template.update(sql,
                 o.getCusname(),
         o.getGoodid(),
