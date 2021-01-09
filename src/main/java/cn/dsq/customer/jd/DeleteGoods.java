@@ -16,6 +16,7 @@ import java.util.*;
 import javax.swing.*;
 
 /**
+ * 删除商品界面
  * @author 1
  */
 public class DeleteGoods extends JFrame {

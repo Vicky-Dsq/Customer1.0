@@ -1,11 +1,17 @@
 package cn.dsq.customer.domain;
 
-import cn.dsq.customer.jd.*;
+import cn.dsq.customer.jd.Home;
+import cn.dsq.customer.jd.Operation;
+import cn.dsq.customer.util.ExportToExl;
 
 import java.io.IOException;
 
+/**
+ * 测试界面
+ */
 public class TestFram {
     public static void main(String[] args) throws IOException {
+        //ExportToExl.writeDbtoExcel("tab_order");
         //new AddCustomer().setVisible(true);
        // new AddGoods().setVisible(true);
        // new AddManager().setVisible(true);
@@ -13,7 +19,7 @@ public class TestFram {
          //new DeleteCustomer().setVisible(true);
         //new DeleteGoods().setVisible(true);
         new Home().setVisible(true);
-         //new Operation().setVisible(true);
+        // new Operation().setVisible(true);
         //new ShowCustomer().setVisible(true);
         //new ShowGoByGrade().setVisible(true);
          //new ShowGoods().setVisible(true);

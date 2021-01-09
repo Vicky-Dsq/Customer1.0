@@ -1,5 +1,8 @@
 package cn.dsq.customer.domain;
 
+/**
+ * 商品类
+ */
 public class Good {
     private int id;
     private String name;

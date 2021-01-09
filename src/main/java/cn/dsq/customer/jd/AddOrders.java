@@ -15,6 +15,7 @@ import java.util.*;
 import javax.swing.*;
 
 /**
+ * 添加订单界面
  * @author 1
  */
 public class AddOrders extends JFrame {

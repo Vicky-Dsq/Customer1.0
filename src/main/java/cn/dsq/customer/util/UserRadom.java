@@ -6,6 +6,9 @@ import cn.dsq.customer.service.impl.UserServiceImpl;
 
 import java.util.Random;
 
+/**
+ * 随机生成客户信息
+ */
 public class UserRadom {
     public static void main(String[] args) throws Exception {
 

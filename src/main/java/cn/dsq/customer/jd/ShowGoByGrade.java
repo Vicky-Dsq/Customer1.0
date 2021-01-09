@@ -17,6 +17,7 @@ import javax.swing.*;
 import javax.swing.table.*;
 
 /**
+ * 通过品牌查询商品界面
  * @author 1
  */
 public class ShowGoByGrade extends JFrame {

@@ -17,6 +17,7 @@ import java.util.*;
 import javax.swing.*;
 
 /**
+ * 进入系统主界面
  * @author 1
  */
 public class Home extends JFrame {

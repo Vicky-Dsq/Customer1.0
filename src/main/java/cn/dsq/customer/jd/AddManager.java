@@ -15,6 +15,7 @@ import java.util.*;
 import javax.swing.*;
 
 /**
+ * 添加管理员信息界面
  * @author 1
  */
 public class AddManager extends JFrame {
@@ -29,7 +30,7 @@ public class AddManager extends JFrame {
 
     private void addActionPerformed(ActionEvent e) throws IOException {
         // TODO add your code here
-        if(maNameField.getText().equals("")||maPasswordField.getText().equals("")){
+        if(maNameField.getText().equals("")||maPasswordField.getPassword().equals("")){
             idea.setText("请输入正确信息！");
             return ;
         }

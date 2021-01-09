@@ -13,6 +13,9 @@ import java.io.IOException;
 import java.io.Writer;
 import java.util.Random;
 
+/**
+ * 随机生成10010条订单信息
+ */
 public class OrderRadom {
     private static JdbcTemplate template =
         new JdbcTemplate(JDBCUtils.getDataSource());

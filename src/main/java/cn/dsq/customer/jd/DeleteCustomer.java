@@ -17,6 +17,7 @@ import java.util.*;
 import javax.swing.*;
 
 /**
+ * 删除客户界面
  * @author 1
  */
 public class DeleteCustomer extends JFrame {

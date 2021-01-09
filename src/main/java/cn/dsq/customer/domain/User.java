@@ -1,5 +1,8 @@
 package cn.dsq.customer.domain;
 
+/**
+ * 客户类
+ */
 public class User {
     private String name;
     private String email;

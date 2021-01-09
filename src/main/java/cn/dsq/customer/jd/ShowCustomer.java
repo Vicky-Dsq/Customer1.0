@@ -20,6 +20,7 @@ import javax.swing.*;
 import javax.swing.table.*;
 
 /**
+ * 查询客户信息界面
  * @author 1
  */
 public class ShowCustomer extends JFrame {
@@ -81,13 +82,13 @@ public class ShowCustomer extends JFrame {
         // JFormDesigner - Component initialization - DO NOT MODIFY  //GEN-BEGIN:initComponents
         ResourceBundle bundle = ResourceBundle.getBundle("form");
         panel1 = new JPanel();
-        label2 = new JLabel();
-        label3 = new JLabel();
-        label4 = new JLabel();
-        label5 = new JLabel();
-        label6 = new JLabel();
+        cusname = new JLabel();
+        cusage = new JLabel();
+        cussex = new JLabel();
+        cusplace = new JLabel();
+        cusphone = new JLabel();
         label7 = new JLabel();
-        label8 = new JLabel();
+        cusgrade = new JLabel();
         cus1 = new JTextField();
         cus2 = new JTextField();
         cus4 = new JTextField();
@@ -96,7 +97,7 @@ public class ShowCustomer extends JFrame {
         cus6 = new JTextField();
         cus7 = new JTextField();
         select = new JButton();
-        label1 = new JLabel();
+        cusemail = new JLabel();
         idea = new JLabel();
         scrollPane1 = new JScrollPane();
         show = new JTable();
@@ -111,37 +112,37 @@ public class ShowCustomer extends JFrame {
         {
             panel1.setLayout(null);
 
-            //---- label2 ----
-            label2.setText(bundle.getString("label2.text_2"));
-            panel1.add(label2);
-            label2.setBounds(70, 0, 50, 25);
+            //---- cusname ----
+            cusname.setText(bundle.getString("cusname.text_2"));
+            panel1.add(cusname);
+            cusname.setBounds(70, 0, 50, 25);
 
-            //---- label3 ----
-            label3.setText(bundle.getString("label3.text_2"));
-            panel1.add(label3);
-            label3.setBounds(225, 5, 40, 20);
+            //---- cusage ----
+            cusage.setText(bundle.getString("cusage.text_2"));
+            panel1.add(cusage);
+            cusage.setBounds(225, 5, 40, 20);
 
-            //---- label4 ----
-            label4.setText(bundle.getString("label4.text"));
-            panel1.add(label4);
-            label4.setBounds(440, 5, 36, label4.getPreferredSize().height);
+            //---- cussex ----
+            cussex.setText(bundle.getString("cussex.text"));
+            panel1.add(cussex);
+            cussex.setBounds(440, 5, 36, cussex.getPreferredSize().height);
 
-            //---- label5 ----
-            label5.setText(bundle.getString("label5.text"));
-            panel1.add(label5);
-            label5.setBounds(310, 5, label5.getPreferredSize().width, 20);
+            //---- cusplace ----
+            cusplace.setText(bundle.getString("cusplace.text"));
+            panel1.add(cusplace);
+            cusplace.setBounds(310, 5, cusplace.getPreferredSize().width, 20);
 
-            //---- label6 ----
-            label6.setText(bundle.getString("label6.text"));
-            panel1.add(label6);
-            label6.setBounds(70, 30, 40, 20);
+            //---- cusphone ----
+            cusphone.setText(bundle.getString("cusphone.text"));
+            panel1.add(cusphone);
+            cusphone.setBounds(70, 30, 40, 20);
             panel1.add(label7);
             label7.setBounds(310, 30, label7.getPreferredSize().width, 20);
 
-            //---- label8 ----
-            label8.setText(bundle.getString("label8.text"));
-            panel1.add(label8);
-            label8.setBounds(new Rectangle(new Point(225, 30), label8.getPreferredSize()));
+            //---- cusgrade ----
+            cusgrade.setText(bundle.getString("cusgrade.text"));
+            panel1.add(cusgrade);
+            cusgrade.setBounds(new Rectangle(new Point(225, 30), cusgrade.getPreferredSize()));
             panel1.add(cus1);
             cus1.setBounds(125, 5, 100, 20);
             panel1.add(cus2);
@@ -163,10 +164,10 @@ public class ShowCustomer extends JFrame {
             panel1.add(select);
             select.setBounds(585, 5, 60, 50);
 
-            //---- label1 ----
-            label1.setText(bundle.getString("label1.text_10"));
-            panel1.add(label1);
-            label1.setBounds(new Rectangle(new Point(310, 30), label1.getPreferredSize()));
+            //---- cusemail ----
+            cusemail.setText(bundle.getString("cusemail.text_10"));
+            panel1.add(cusemail);
+            cusemail.setBounds(new Rectangle(new Point(310, 30), cusemail.getPreferredSize()));
             panel1.add(idea);
             idea.setBounds(440, 30, 140, 25);
 
@@ -191,11 +192,11 @@ public class ShowCustomer extends JFrame {
         {
 
             //---- show ----
-            Vector<Vector<Object>> contextList = ShowTable.getCustomer("select *" +
-                    " from tab_user");
-            Vector<Object> titileList  = ShowTable.getCusTitle();
+            String sql = "select * from tab_user";
+            Vector<Vector<Object>> contextList = ShowTable.getCustomer(sql);
+            Vector<Object> title = ShowTable.getCusTitle();
             show.setModel(new DefaultTableModel(
-                    contextList,titileList
+                    contextList,title
             ));
             scrollPane1.setViewportView(show);
         }
@@ -208,13 +209,13 @@ public class ShowCustomer extends JFrame {
 
     // JFormDesigner - Variables declaration - DO NOT MODIFY  //GEN-BEGIN:variables
     private JPanel panel1;
-    private JLabel label2;
-    private JLabel label3;
-    private JLabel label4;
-    private JLabel label5;
-    private JLabel label6;
+    private JLabel cusname;
+    private JLabel cusage;
+    private JLabel cussex;
+    private JLabel cusplace;
+    private JLabel cusphone;
     private JLabel label7;
-    private JLabel label8;
+    private JLabel cusgrade;
     private JTextField cus1;
     private JTextField cus2;
     private JTextField cus4;
@@ -223,7 +224,7 @@ public class ShowCustomer extends JFrame {
     private JTextField cus6;
     private JTextField cus7;
     private JButton select;
-    private JLabel label1;
+    private JLabel cusemail;
     private JLabel idea;
     private JScrollPane scrollPane1;
     private JTable show;

@@ -55,6 +55,10 @@ public class OrderDaoImpl implements OrderDao {
         );
     }
 
+    /**
+     * 删除客户信息
+     * @param user
+     */
     @Override
     public void delete(User user) {
         String sql = "delete from tab_order where cusname=?";

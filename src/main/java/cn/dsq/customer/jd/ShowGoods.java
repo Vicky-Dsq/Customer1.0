@@ -8,12 +8,15 @@ import cn.dsq.customer.util.ShowTable;
 
 import javax.swing.*;
 import javax.swing.table.DefaultTableModel;
+import javax.swing.table.TableRowSorter;
 import java.awt.*;
 import java.awt.event.ActionEvent;
+import java.util.Collections;
 import java.util.ResourceBundle;
 import java.util.Vector;
 
 /**
+ * 查询商品界面
  * @author 1
  */
 public class ShowGoods extends JFrame {
@@ -26,14 +29,14 @@ public class ShowGoods extends JFrame {
         String sql = "select * from tab_good where ";
         String[] n={"","","",""};
 
-        if(!cus1.getText().equals("")){
-            n[1]=nature[1]+"="+cus1.getText();
+        if(!good1.getText().equals("")){
+            n[1]=nature[1]+"="+good1.getText();
         }
-        if(!cus2.getText().equals("")){
-            n[2]=nature[2]+"="+"\'"+cus2.getText()+"\'";
+        if(!good2.getText().equals("")){
+            n[2]=nature[2]+"="+"\'"+good2.getText()+"\'";
         }
-        if(!cus3.getText().equals("")){
-            n[3]=nature[3]+"="+cus3.getText();
+        if(!good3.getText().equals("")){
+            n[3]=nature[3]+"="+good3.getText();
         }
 
         int j=0;
@@ -50,10 +53,23 @@ public class ShowGoods extends JFrame {
             idea.setText("请输入查询信息！");
             return;
         }
+        System.out.println(sql);
         Vector<Vector<Object>> contextList = ShowTable.getGoods(sql);
-        Vector<Object> title = ShowTable.getGoodTitile();
+        Vector<String> titles = new Vector<String>();
+        Collections.addAll(titles, "编号","商品名称","单价");//定义表格列头
+        DefaultTableModel model1 = new DefaultTableModel(contextList,
+                titles) {//使用Vector装载表格数据模型，覆写getColumnClass方法，实现按数值排序
+            public Class getColumnClass(int column) {
+                Class returnValue;
+                if ((column >= 0) && (column < getColumnCount())) {
+                    returnValue = getValueAt(0, column).getClass();
+                } else { returnValue = Object.class; }
+                return returnValue;
+            }};// 定义表格数据模型的表格标题和行数(为0行)
+        TableRowSorter sorter = new TableRowSorter<DefaultTableModel>(model1);//设置表格模型排序器
+        show.setRowSorter(sorter);//设置表格排序器
         show.setModel(new DefaultTableModel(
-                contextList,title
+                contextList,titles
                 ));
         scrollPane1.setViewportView(show);
     }
@@ -62,12 +78,12 @@ public class ShowGoods extends JFrame {
         // JFormDesigner - Component initialization - DO NOT MODIFY  //GEN-BEGIN:initComponents
         ResourceBundle bundle = ResourceBundle.getBundle("form");
         panel1 = new JPanel();
-        label3 = new JLabel();
-        label5 = new JLabel();
-        label8 = new JLabel();
-        cus2 = new JTextField();
-        cus3 = new JTextField();
-        cus1 = new JTextField();
+        goodname = new JLabel();
+        pricesigle = new JLabel();
+        goodid = new JLabel();
+        good2 = new JTextField();
+        good3 = new JTextField();
+        good1 = new JTextField();
         select = new JButton();
         idea = new JLabel();
         scrollPane1 = new JScrollPane();
@@ -83,26 +99,26 @@ public class ShowGoods extends JFrame {
         {
             panel1.setLayout(null);
 
-            //---- label3 ----
-            label3.setText(bundle.getString("label3.text_2"));
-            panel1.add(label3);
-            label3.setBounds(180, 20, 60, 20);
+            //---- goodname ----
+            goodname.setText(bundle.getString("goodname.text_2"));
+            panel1.add(goodname);
+            goodname.setBounds(180, 20, 60, 20);
 
-            //---- label5 ----
-            label5.setText(bundle.getString("label5.text"));
-            panel1.add(label5);
-            label5.setBounds(310, 20, label5.getPreferredSize().width, 20);
+            //---- pricesigle ----
+            pricesigle.setText(bundle.getString("pricesigle.text"));
+            panel1.add(pricesigle);
+            pricesigle.setBounds(310, 20, pricesigle.getPreferredSize().width, 20);
 
-            //---- label8 ----
-            label8.setText(bundle.getString("label8.text"));
-            panel1.add(label8);
-            label8.setBounds(new Rectangle(new Point(75, 20), label8.getPreferredSize()));
-            panel1.add(cus2);
-            cus2.setBounds(235, 20, 70, 20);
-            panel1.add(cus3);
-            cus3.setBounds(345, 20, 95, 20);
-            panel1.add(cus1);
-            cus1.setBounds(105, 20, 70, 20);
+            //---- goodid ----
+            goodid.setText(bundle.getString("goodid.text"));
+            panel1.add(goodid);
+            goodid.setBounds(new Rectangle(new Point(75, 20), goodid.getPreferredSize()));
+            panel1.add(good2);
+            good2.setBounds(235, 20, 70, 20);
+            panel1.add(good3);
+            good3.setBounds(345, 20, 95, 20);
+            panel1.add(good1);
+            good1.setBounds(105, 20, 70, 20);
 
             //---- select ----
             select.setText(bundle.getString("select.text"));
@@ -133,11 +149,24 @@ public class ShowGoods extends JFrame {
         {
 
             //---- show ----
-            Vector<Vector<Object>> contextList = ShowTable.getGoods("select *" +
-                    " from tab_good");
-            Vector<Object> titileList  = ShowTable.getGoodTitile();
+            String sql = "select * from tab_good";
+            Vector<Vector<Object>> contextList = ShowTable.getGoods(sql);
+            Vector<Object> title = ShowTable.getGoodTitile();
+            Vector<String> titles = new Vector<String>();
+            Collections.addAll(titles, "编号","商品名称","单价");//定义表格列头
+            DefaultTableModel model1 = new DefaultTableModel(contextList,
+                    titles) {//使用Vector装载表格数据模型，覆写getColumnClass方法，实现按数值排序
+                public Class getColumnClass(int column) {
+                    Class returnValue;
+                    if ((column >= 0) && (column < getColumnCount())) {
+                        returnValue = getValueAt(0, column).getClass();
+                    } else { returnValue = Object.class; }
+                    return returnValue;
+                }};// 定义表格数据模型的表格标题和行数(为0行)
+            TableRowSorter sorter = new TableRowSorter<DefaultTableModel>(model1);//设置表格模型排序器
+            show.setRowSorter(sorter);//设置表格排序器
             show.setModel(new DefaultTableModel(
-                    contextList,titileList
+                    contextList,title
             ));
             scrollPane1.setViewportView(show);
         }
@@ -150,12 +179,12 @@ public class ShowGoods extends JFrame {
 
     // JFormDesigner - Variables declaration - DO NOT MODIFY  //GEN-BEGIN:variables
     private JPanel panel1;
-    private JLabel label3;
-    private JLabel label5;
-    private JLabel label8;
-    private JTextField cus2;
-    private JTextField cus3;
-    private JTextField cus1;
+    private JLabel goodname;
+    private JLabel pricesigle;
+    private JLabel goodid;
+    private JTextField good2;
+    private JTextField good3;
+    private JTextField good1;
     private JButton select;
     private JLabel idea;
     private JScrollPane scrollPane1;

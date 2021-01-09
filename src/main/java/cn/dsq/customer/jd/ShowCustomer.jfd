@@ -12,8 +12,8 @@ new FormModel {
 			add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class com.jformdesigner.runtime.NullLayout ) ) {
 				name: "panel1"
 				add( new FormComponent( "javax.swing.JLabel" ) {
-					name: "label2"
-					"text": new FormMessage( null, "label2.text_2" )
+					name: "cusname"
+					"text": new FormMessage( null, "cusname.text_2" )
 				}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
 					"x": 70
 					"y": 0
@@ -21,8 +21,8 @@ new FormModel {
 					"height": 25
 				} )
 				add( new FormComponent( "javax.swing.JLabel" ) {
-					name: "label3"
-					"text": new FormMessage( null, "label3.text_2" )
+					name: "cusage"
+					"text": new FormMessage( null, "cusage.text_2" )
 				}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
 					"x": 225
 					"y": 5
@@ -30,24 +30,24 @@ new FormModel {
 					"height": 20
 				} )
 				add( new FormComponent( "javax.swing.JLabel" ) {
-					name: "label4"
-					"text": new FormMessage( null, "label4.text" )
+					name: "cussex"
+					"text": new FormMessage( null, "cussex.text" )
 				}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
 					"x": 440
 					"y": 5
 					"width": 36
 				} )
 				add( new FormComponent( "javax.swing.JLabel" ) {
-					name: "label5"
-					"text": new FormMessage( null, "label5.text" )
+					name: "cusplace"
+					"text": new FormMessage( null, "cusplace.text" )
 				}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
 					"x": 310
 					"y": 5
 					"height": 20
 				} )
 				add( new FormComponent( "javax.swing.JLabel" ) {
-					name: "label6"
-					"text": new FormMessage( null, "label6.text" )
+					name: "cusphone"
+					"text": new FormMessage( null, "cusphone.text" )
 				}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
 					"x": 70
 					"y": 30
@@ -62,8 +62,8 @@ new FormModel {
 					"height": 20
 				} )
 				add( new FormComponent( "javax.swing.JLabel" ) {
-					name: "label8"
-					"text": new FormMessage( null, "label8.text" )
+					name: "cusgrade"
+					"text": new FormMessage( null, "cusgrade.text" )
 				}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
 					"x": 225
 					"y": 30
@@ -135,8 +135,8 @@ new FormModel {
 					"height": 50
 				} )
 				add( new FormComponent( "javax.swing.JLabel" ) {
-					name: "label1"
-					"text": new FormMessage( null, "label1.text_10" )
+					name: "cusemail"
+					"text": new FormMessage( null, "cusemail.text_10" )
 				}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
 					"x": 310
 					"y": 30

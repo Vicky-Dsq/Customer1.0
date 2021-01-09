@@ -14,6 +14,7 @@ import java.util.*;
 import javax.swing.*;
 
 /**
+ * 修改客户信息界面
  * @author 1
  */
 public class UpdateCustomer extends JFrame {

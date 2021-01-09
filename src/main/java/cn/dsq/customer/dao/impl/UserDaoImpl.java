@@ -16,6 +16,8 @@ public class UserDaoImpl implements UserDao {
             new JdbcTemplate(JDBCUtils.getDataSource());
     /**
      * 通过客户名称查找客户
+     * @param name
+     * @return
      */
     @Override
     public User findByName(String name) {

@@ -1,5 +1,8 @@
 package cn.dsq.customer.domain;
 
+/**
+ * 订单类
+ */
 public class Order {
     private String cusname;
     private String phone;

@@ -8,6 +8,9 @@ import cn.dsq.customer.service.impl.UserServiceImpl;
 
 import java.util.Random;
 
+/**
+ * 随机生成10010条商品信息
+ */
 public class GoodRadom {
 
     public static void main(String[] args) {

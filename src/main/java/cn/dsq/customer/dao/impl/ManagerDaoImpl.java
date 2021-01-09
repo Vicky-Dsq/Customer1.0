@@ -13,6 +13,7 @@ import org.springframework.jdbc.core.JdbcTemplate;
  *
  * （由于管理员数据较少，改用文本文件存储用户名，密码）
  * （主程序中该类未被调用）
+ * @author
  */
 public class ManagerDaoImpl implements ManagerDao {
     private static JdbcTemplate template =
@@ -39,6 +40,8 @@ public class ManagerDaoImpl implements ManagerDao {
 
     /**
      * 添加管理员信息
+      * @param manager
+     * @return
      */
     @Override
     public void save(Manager manager) {

@@ -4,13 +4,17 @@
 
 package cn.dsq.customer.jd;
 
+import cn.dsq.customer.util.ExportToExl;
+
 import java.awt.*;
 import java.awt.event.*;
 import java.io.IOException;
 import java.util.*;
 import javax.swing.*;
+import javax.swing.plaf.*;
 
 /**
+ * 管理员操作界面
  * @author 1
  */
 public class Operation extends JFrame {
@@ -92,6 +96,27 @@ public class Operation extends JFrame {
         new AddCustomer().setVisible(true);
     }
 
+    private void exportcusActionPerformed(ActionEvent e) {
+        // TODO add your code here
+        ExportToExl.writeDbtoExcel("tab_user");
+        JOptionPane.showMessageDialog(null,
+                "数据已导至D:/dsq/tab_user.xls!");
+    }
+
+    private void exportgoodActionPerformed(ActionEvent e) {
+        // TODO add your code here
+        ExportToExl.writeDbtoExcel("tab_good");
+        JOptionPane.showMessageDialog(null,
+                "数据已导至D:/dsq/tab_good.xls!");
+    }
+
+    private void exportorderActionPerformed(ActionEvent e) {
+        // TODO add your code here
+        ExportToExl.writeDbtoExcel("tab_order");
+        JOptionPane.showMessageDialog(null,
+                "数据已导至D:/dsq/tab_order.xls!");
+    }
+
     private void initComponents() {
         // JFormDesigner - Component initialization - DO NOT MODIFY  //GEN-BEGIN:initComponents
         ResourceBundle bundle = ResourceBundle.getBundle("form");
@@ -110,12 +135,19 @@ public class Operation extends JFrame {
         order = new JMenu();
         orderSelect = new JMenuItem();
         addOrder = new JMenuItem();
+        menu1 = new JMenu();
+        exportcus = new JMenuItem();
+        exportgood = new JMenuItem();
+        exportorder = new JMenuItem();
         manager = new JMenu();
         loginManager = new JMenuItem();
+        menuBar2 = new JMenuBar();
         exit = new JButton();
+        back = new JLabel();
 
         //======== this ========
         setMinimumSize(new Dimension(500, 400));
+        setTitle(bundle.getString("this.title_7"));
         var contentPane = getContentPane();
         contentPane.setLayout(null);
 
@@ -206,6 +238,27 @@ public class Operation extends JFrame {
             }
             menuBar1.add(order);
 
+            //======== menu1 ========
+            {
+                menu1.setText(bundle.getString("menu1.text_2"));
+
+                //---- exportcus ----
+                exportcus.setText(bundle.getString("exportcus.text_2"));
+                exportcus.addActionListener(e -> exportcusActionPerformed(e));
+                menu1.add(exportcus);
+
+                //---- exportgood ----
+                exportgood.setText(bundle.getString("exportgood.text"));
+                exportgood.addActionListener(e -> exportgoodActionPerformed(e));
+                menu1.add(exportgood);
+
+                //---- exportorder ----
+                exportorder.setText(bundle.getString("exportorder.text"));
+                exportorder.addActionListener(e -> exportorderActionPerformed(e));
+                menu1.add(exportorder);
+            }
+            menuBar1.add(menu1);
+
             //======== manager ========
             {
                 manager.setText(bundle.getString("manager.text"));
@@ -216,6 +269,7 @@ public class Operation extends JFrame {
                 manager.add(loginManager);
             }
             menuBar1.add(manager);
+            menuBar1.add(menuBar2);
         }
         setJMenuBar(menuBar1);
 
@@ -226,7 +280,17 @@ public class Operation extends JFrame {
 			exitActionPerformed(e);
 		});
         contentPane.add(exit);
-        exit.setBounds(375, 280, 93, 39);
+        exit.setBounds(380, 330, 93, 39);
+
+        //---- back ----
+        back.setBounds(0,0, 500, 400);
+        String strPath="D:\\CurriculumDesign\\customer\\src\\main\\java\\cn" +
+                "\\dsq\\customer\\images\\Background.jpg";
+        ImageIcon icon = new ImageIcon(strPath);//你的图片地址
+        icon.setImage(icon.getImage().getScaledInstance(back.getWidth(),
+                back.getHeight(),Image.SCALE_DEFAULT));
+        back.setIcon(icon);
+        contentPane.add(back);
 
         {
             // compute preferred size
@@ -263,8 +327,14 @@ public class Operation extends JFrame {
     private JMenu order;
     private JMenuItem orderSelect;
     private JMenuItem addOrder;
+    private JMenu menu1;
+    private JMenuItem exportcus;
+    private JMenuItem exportgood;
+    private JMenuItem exportorder;
     private JMenu manager;
     private JMenuItem loginManager;
+    private JMenuBar menuBar2;
     private JButton exit;
+    private JLabel back;
     // JFormDesigner - End of variables declaration  //GEN-END:variables
 }

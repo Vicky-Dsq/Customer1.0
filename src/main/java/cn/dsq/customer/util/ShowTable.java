@@ -16,7 +16,15 @@ import java.sql.SQLException;
 import java.util.List;
 import java.util.Vector;
 
+/**
+ * 显示表，工具类
+ */
 public class ShowTable {
+    /**
+     * 得到客户表的数据
+     * @param sql
+     * @return
+     */
     public static Vector<Vector<Object>> getCustomer(String sql){
         JdbcTemplate jdbcTemplate = new JdbcTemplate(JDBCUtils.getDataSource());
         class MyRowMapper implements RowMapper {
@@ -48,6 +56,11 @@ public class ShowTable {
         }
         return contextList;
     }
+
+    /**
+     * 得到客户表的表头
+     * @return
+     */
     public static Vector<Object> getCusTitle(){
         Vector<Object> titleList = new Vector<>();
         titleList.add("name");
@@ -60,6 +73,11 @@ public class ShowTable {
         return titleList;
     }
 
+    /**
+     * 得到商品表的信息
+     * @param sql
+     * @return
+     */
     public static Vector<Vector<Object>> getGoods(String sql) {
         JdbcTemplate jdbcTemplate = new JdbcTemplate(JDBCUtils.getDataSource());
         class MyRowMapper implements RowMapper {
@@ -84,6 +102,10 @@ public class ShowTable {
         return contextList;
     }
 
+    /**
+     * 得到商品表的表头
+     * @return
+     */
     public static Vector<Object> getGoodTitile() {
         Vector<Object> titleList = new Vector<>();
         titleList.add("编号");
@@ -92,22 +114,14 @@ public class ShowTable {
         return titleList;
     }
 
-
-
-    public static Vector<Object> getOrderTitile() {
-        Vector<Object> titleList = new Vector<>();
-        titleList.add("客户姓名");
-        titleList.add("客户电话");
-        titleList.add("客户地址");
-        titleList.add("所购商品名");
-        titleList.add("购买该商品的数量");
-        titleList.add("购买该商品的总价");
-        return titleList;
-    }
-
+    /**
+     * 得到订单表的信息
+     * @param sql
+     * @return
+     */
     public static Vector<Vector<Object>> getOrder(String sql) {
         JdbcTemplate jdbcTemplate = new JdbcTemplate(JDBCUtils.getDataSource());
-               class MyRowMapper implements RowMapper {
+        class MyRowMapper implements RowMapper {
             @Override
             public Object mapRow(ResultSet resultSet, int i) throws SQLException {
                 Order order = new Order();
@@ -134,4 +148,19 @@ public class ShowTable {
         }
         return contextList;
     }
+    /**
+     * 得到订单表的表头
+     * @return
+     */
+    public static Vector<Object> getOrderTitile() {
+        Vector<Object> titleList = new Vector<>();
+        titleList.add("客户姓名");
+        titleList.add("客户电话");
+        titleList.add("客户地址");
+        titleList.add("所购商品名");
+        titleList.add("购买该商品的数量");
+        titleList.add("购买该商品的总价");
+        return titleList;
+    }
+
 }

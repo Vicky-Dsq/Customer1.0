@@ -16,6 +16,7 @@ import java.util.*;
 import javax.swing.*;
 
 /**
+ * 添加商品信息界面
  * @author 1
  */
 public class AddGoods extends JFrame {

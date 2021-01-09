@@ -18,6 +18,7 @@ import javax.swing.*;
 import javax.swing.table.*;
 
 /**
+ * 查询订单界面
  * @author 1
  */
 public class ShowOder extends JFrame {

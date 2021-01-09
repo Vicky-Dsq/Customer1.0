@@ -2,6 +2,9 @@ package cn.dsq.customer.util;
 
 import java.io.*;
 
+/**
+ * 文件操作，添加管理员信息
+ */
 public class SetManager {
     public static void main(String[] args) throws IOException {
         File file = new File("C:\\Users\\86135\\Desktop\\Java课设\\manager.txt");

@@ -8,16 +8,26 @@ new FormModel {
 		add( new FormWindow( "javax.swing.JFrame", new FormLayoutManager( class com.jformdesigner.runtime.NullLayout ) ) {
 			name: "this"
 			"minimumSize": new java.awt.Dimension( 500, 400 )
+			"title": new FormMessage( null, "this.title_7" )
 			add( new FormComponent( "javax.swing.JButton" ) {
 				name: "exit"
 				"text": new FormMessage( null, "exit.text_5" )
 				addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "exitActionPerformed", true ) )
 				addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "exitActionPerformed", true ) )
 			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
-				"x": 375
-				"y": 280
+				"x": 380
+				"y": 330
 				"width": 93
 				"height": 39
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "back"
+				"icon": new com.jformdesigner.model.SwingIcon( 0, "/cn/dsq/customer/images/Background.jpg" )
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"x": -235
+				"y": -15
+				"width": 865
+				"height": 775
 			} )
 			menuBar: new FormContainer( "javax.swing.JMenuBar", new FormLayoutManager( class javax.swing.JMenuBar ) ) {
 				name: "menuBar1"
@@ -92,6 +102,25 @@ new FormModel {
 					} )
 				} )
 				add( new FormContainer( "javax.swing.JMenu", new FormLayoutManager( class javax.swing.JMenu ) ) {
+					name: "menu1"
+					"text": new FormMessage( null, "menu1.text_2" )
+					add( new FormComponent( "javax.swing.JMenuItem" ) {
+						name: "exportcus"
+						"text": new FormMessage( null, "exportcus.text_2" )
+						addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "exportcusActionPerformed", true ) )
+					} )
+					add( new FormComponent( "javax.swing.JMenuItem" ) {
+						name: "exportgood"
+						"text": new FormMessage( null, "exportgood.text" )
+						addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "exportgoodActionPerformed", true ) )
+					} )
+					add( new FormComponent( "javax.swing.JMenuItem" ) {
+						name: "exportorder"
+						"text": new FormMessage( null, "exportorder.text" )
+						addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "exportorderActionPerformed", true ) )
+					} )
+				} )
+				add( new FormContainer( "javax.swing.JMenu", new FormLayoutManager( class javax.swing.JMenu ) ) {
 					name: "manager"
 					"text": new FormMessage( null, "manager.text" )
 					add( new FormComponent( "javax.swing.JMenuItem" ) {
@@ -100,10 +129,13 @@ new FormModel {
 						addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "loginManagerActionPerformed", true ) )
 					} )
 				} )
+				add( new FormContainer( "javax.swing.JMenuBar", new FormLayoutManager( class javax.swing.JMenuBar ) ) {
+					name: "menuBar2"
+				} )
 			}
 		}, new FormLayoutConstraints( null ) {
-			"location": new java.awt.Point( 0, 0 )
-			"size": new java.awt.Dimension( 485, 375 )
+			"location": new java.awt.Point( 20, 5 )
+			"size": new java.awt.Dimension( 740, 475 )
 		} )
 	}
 }

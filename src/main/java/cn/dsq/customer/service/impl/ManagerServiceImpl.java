@@ -7,6 +7,11 @@ import cn.dsq.customer.service.ManagerService;
 public class ManagerServiceImpl implements ManagerService {
     private ManagerDao managerDao = new ManagerDaoImpl();
 
+    /**
+     * 如果客户信息无误，保存客户信息
+     * @param manager
+     * @return
+     */
     @Override
     public boolean regist(Manager manager) {
         Manager m=null;

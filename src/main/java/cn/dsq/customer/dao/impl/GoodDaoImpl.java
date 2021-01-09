@@ -16,6 +16,7 @@ public class GoodDaoImpl implements GoodDao {
     /**
      * 通过编号查找商品
      * @param id
+     * @author dsq
      * @return
      */
     @Override
@@ -61,6 +62,12 @@ public class GoodDaoImpl implements GoodDao {
         template.update(sql,good.getId(),good.getName(),good.getPrice());
     }
 
+    /**
+     * 通过商品名称和编号查找商品
+     * @param name
+     * @param id
+     * @return
+     */
     @Override
     public Good findByNameId(String name,int id) {
         Good good=null;
@@ -70,12 +77,22 @@ public class GoodDaoImpl implements GoodDao {
         return good;
     }
 
+    /**
+     * 通过商品编号查找商品
+     * @param good
+     */
     @Override
     public void delete(Good good) {
         String sql = "delete from tab_good where id=?";
         template.update(sql,good.getId());
     }
 
+    /**
+     * 通过商品编号修改商品信息
+     * @param good
+     * @param change
+     * @param replace
+     */
     @Override
     public void update(Good good, String change, String replace) {
         String sql = "update tab_good set "+change+" = ? where id = ?";

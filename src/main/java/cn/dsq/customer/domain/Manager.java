@@ -1,5 +1,7 @@
 package cn.dsq.customer.domain;
-
+/**
+ * 管理员类
+ */
 public class Manager {
     private String maName;
     private String maPassword;

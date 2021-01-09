@@ -8,6 +8,12 @@ import cn.dsq.customer.service.GoodService;
 public class GoodServiceImpl implements GoodService {
     public GoodDao goodDao = new GoodDaoImpl();
 
+    /**
+     * 如果商品信息无误，保存商品信息
+     * @param good
+     * @param id
+     * @return
+     */
     @Override
     public boolean register(Good good,int id) {
         Good g = new Good();
