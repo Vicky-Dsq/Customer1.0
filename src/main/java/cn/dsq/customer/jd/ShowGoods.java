@@ -149,9 +149,8 @@ public class ShowGoods extends JFrame {
         {
 
             //---- show ----
-            String sql = "select * from tab_good";
-            Vector<Vector<Object>> contextList = ShowTable.getGoods(sql);
-            Vector<Object> title = ShowTable.getGoodTitile();
+            Vector<Vector<Object>> contextList = ShowTable.getGoods("select *" +
+                    " from tab_good");
             Vector<String> titles = new Vector<String>();
             Collections.addAll(titles, "编号","商品名称","单价");//定义表格列头
             DefaultTableModel model1 = new DefaultTableModel(contextList,
@@ -166,7 +165,7 @@ public class ShowGoods extends JFrame {
             TableRowSorter sorter = new TableRowSorter<DefaultTableModel>(model1);//设置表格模型排序器
             show.setRowSorter(sorter);//设置表格排序器
             show.setModel(new DefaultTableModel(
-                    contextList,title
+                    contextList,titles
             ));
             scrollPane1.setViewportView(show);
         }

@@ -8,6 +8,7 @@ new FormModel {
 		add( new FormWindow( "javax.swing.JFrame", new FormLayoutManager( class com.jformdesigner.runtime.NullLayout ) ) {
 			name: "this"
 			"minimumSize": new java.awt.Dimension( 600, 600 )
+			"title": new FormMessage( null, "this.title_8" )
 			add( new FormComponent( "javax.swing.JLabel" ) {
 				name: "label1"
 				"text": new FormMessage( null, "label1.text_5" )

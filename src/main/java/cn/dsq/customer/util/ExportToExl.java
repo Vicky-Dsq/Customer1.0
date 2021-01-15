@@ -41,7 +41,6 @@ public class ExportToExl {
             for(int i=0;i<c;i++){
                 HSSFCell cel=row0.createCell(i);//创建第一行的第i列
                 cel.setCellValue(rsmd.getColumnName(i+1));
-//				cel.setCellStyle(style);
             }
             //将数据表中的数据按行导入进Excel表中
             int r=1;

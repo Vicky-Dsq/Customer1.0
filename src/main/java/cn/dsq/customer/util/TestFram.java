@@ -1,7 +1,6 @@
-package cn.dsq.customer.domain;
+package cn.dsq.customer.util;
 
-import cn.dsq.customer.jd.Home;
-import cn.dsq.customer.jd.Operation;
+import cn.dsq.customer.jd.*;
 import cn.dsq.customer.util.ExportToExl;
 
 import java.io.IOException;
@@ -18,8 +17,8 @@ public class TestFram {
         //new AddOrders().setVisible(true);
          //new DeleteCustomer().setVisible(true);
         //new DeleteGoods().setVisible(true);
-        new Home().setVisible(true);
-        // new Operation().setVisible(true);
+        // new Home().setVisible(true);
+         new Operation().setVisible(true);
         //new ShowCustomer().setVisible(true);
         //new ShowGoByGrade().setVisible(true);
          //new ShowGoods().setVisible(true);

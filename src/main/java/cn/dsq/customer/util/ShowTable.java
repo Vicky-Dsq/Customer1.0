@@ -63,13 +63,13 @@ public class ShowTable {
      */
     public static Vector<Object> getCusTitle(){
         Vector<Object> titleList = new Vector<>();
-        titleList.add("name");
-        titleList.add("age");
-        titleList.add("sex");
-        titleList.add("place");
-        titleList.add("phone");
-        titleList.add("email");
-        titleList.add("grade");
+        titleList.add("姓名");
+        titleList.add("年龄");
+        titleList.add("性别");
+        titleList.add("地址");
+        titleList.add("电话");
+        titleList.add("邮箱");
+        titleList.add("等级");
         return titleList;
     }
 

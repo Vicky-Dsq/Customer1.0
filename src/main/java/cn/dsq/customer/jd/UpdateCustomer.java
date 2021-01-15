@@ -72,6 +72,7 @@ public class UpdateCustomer extends JFrame {
 
         //======== this ========
         setMinimumSize(new Dimension(600, 600));
+        setTitle(bundle.getString("this.title_10"));
         var contentPane = getContentPane();
         contentPane.setLayout(null);
 
@@ -113,6 +114,14 @@ public class UpdateCustomer extends JFrame {
         rb5.setText(bundle.getString("rb5.text"));
         contentPane.add(rb5);
         rb5.setBounds(new Rectangle(new Point(395, 245), rb5.getPreferredSize()));
+
+        ButtonGroup buttonGroup = new ButtonGroup();
+        buttonGroup.add(rb1);
+        buttonGroup.add(rb2);
+        buttonGroup.add(rb3);
+        buttonGroup.add(rb4);
+        buttonGroup.add(rb5);
+
 
         //---- label3 ----
         label3.setText(bundle.getString("label3.text_6"));

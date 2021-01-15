@@ -112,7 +112,7 @@ public class ShowOder extends JFrame {
                     "goodnum*price as allprice from tab_good, tab_order," +
                     "tab_user where cusname=tab_user.name and goodid=id";
             Vector<Vector<Object>> contextList = ShowTable.getOrder(sql);
-            Vector<Object> titileList  = ShowTable.getGoodTitile();
+            Vector<Object> titileList  = ShowTable.getOrderTitile();
             show.setModel(new DefaultTableModel(
                     contextList,titileList
             ));

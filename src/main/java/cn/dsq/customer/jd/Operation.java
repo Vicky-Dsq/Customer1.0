@@ -117,6 +117,7 @@ public class Operation extends JFrame {
                 "数据已导至D:/dsq/tab_order.xls!");
     }
 
+
     private void initComponents() {
         // JFormDesigner - Component initialization - DO NOT MODIFY  //GEN-BEGIN:initComponents
         ResourceBundle bundle = ResourceBundle.getBundle("form");

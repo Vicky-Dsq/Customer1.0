@@ -61,6 +61,7 @@ public class DeleteCustomer extends JFrame {
 
         //======== this ========
         setMinimumSize(new Dimension(600, 600));
+        setTitle(bundle.getString("this.title_11"));
         var contentPane = getContentPane();
         contentPane.setLayout(null);
 

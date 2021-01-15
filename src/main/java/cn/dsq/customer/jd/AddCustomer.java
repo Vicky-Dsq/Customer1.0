@@ -73,6 +73,7 @@ public class AddCustomer extends JFrame {
 
         //======== this ========
         setMinimumSize(new Dimension(600, 600));
+        setTitle(bundle.getString("this.title_8"));
         var contentPane = getContentPane();
         contentPane.setLayout(null);
 

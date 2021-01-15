@@ -192,8 +192,8 @@ public class ShowCustomer extends JFrame {
         {
 
             //---- show ----
-            String sql = "select * from tab_user";
-            Vector<Vector<Object>> contextList = ShowTable.getCustomer(sql);
+            Vector<Vector<Object>> contextList = ShowTable.getCustomer(
+                    "select * from tab_user");
             Vector<Object> title = ShowTable.getCusTitle();
             show.setModel(new DefaultTableModel(
                     contextList,title
